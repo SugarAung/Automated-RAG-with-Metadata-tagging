@@ -27,7 +27,7 @@ It is designed for a future larger system where teachers can upload questions, m
 
 ```mermaid
 flowchart TD
-    A[Teacher JSON<br>(questions + matches)] --> B[Normalization<br>metadata_input.json → normalized_metadata.json]
+    A[Teacher JSON (questions & matches)] --> B[Normalization<br>metadata_input.json → normalized_metadata.json]
     B --> C[Corpus Text Builder<br>(metadata_tagging_file.txt)]
     C --> D[Upload to Google Cloud Storage]
     D --> E[Reimport to Vertex RAG Corpus]
