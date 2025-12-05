@@ -27,10 +27,10 @@ It is designed for a future larger system where teachers can upload questions, m
 
 ```mermaid
 flowchart TD
-    A[Teacher JSON (questions & matches)] --> B[Normalization<br>metadata_input.json → normalized_metadata.json]
-    B --> C[Corpus Text Builder<br>(metadata_tagging_file.txt)]
+    A[Teacher JSON input] --> B[Normalize metadata files]
+    B --> C[Build corpus text file]
     C --> D[Upload to Google Cloud Storage]
-    D --> E[Reimport to Vertex RAG Corpus]
+    D --> E[Import into Vertex RAG Corpus]
     E --> F[RAG Search Engine]
 
     F --> G1[Search by Text]
@@ -40,6 +40,7 @@ flowchart TD
     G1 --> H[ADK Web Agent UI]
     G2 --> H
     G3 --> H
+
 ```
 
 ---
