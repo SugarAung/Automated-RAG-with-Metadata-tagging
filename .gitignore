@@ -1,0 +1,86 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter and cache
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ----------------------------
+# ADK / Vertex AI / Logs
+# ----------------------------
+# ADK session metadata
+adk_state/
+*.adk/
+.adk/
+
+# ADK build artifacts
+*adk_cache*
+*.adk_config*
+
+# Local ADK auth / credentials
+credentials/
+google_credentials.json
+token.json
+*.boto
+
+# Logs
+*.log
+
+# ----------------------------
+# Operating System Files
+# ----------------------------
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ----------------------------
+# Environment / Secrets
+# ----------------------------
+.env
+.env.local
+*.env.*
+
+# NEVER upload service account keys
+*.json
+
+# ----------------------------
+# Project-Specific
+# ----------------------------
+
+# Ingestion intermediate files (auto-generated)
+question_rag/metadata_tagging_file.txt
+question_rag/input/normalized_metadata.json
+
+# Any local test outputs
+temp/
+tmp/
+output/
+*.tmp
+
+# IDE folders
+.vscode/
+.idea/
+
+# Build folders
+build/
+dist/

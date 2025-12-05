@@ -1,0 +1,16 @@
+[project]
+name = "automated-rag"
+version = "0.1.0"
+description = "Automated RAG exam question generator"
+requires-python = ">=3.10"
+
+dependencies = [
+  "google-adk>=0.0.1",
+  "google-cloud-aiplatform[adk,agent-engines]>=1.88.0",
+  "google-cloud-storage",
+  "python-dotenv",
+]
+
+[project.entry-points."adk.agents"]
+exam-rag-agent = "question_rag.agents.adk_agent:root_agent"
+
